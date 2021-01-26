@@ -1,0 +1,31 @@
+name: Tests
+
+on: [push, pull_request]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout source
+              uses: actions/checkout@v2
+
+            - name: Set up Python
+              uses: actions/setup-python@v2
+              with:
+                  python-version: 3.8
+
+            - name: restore python cache
+              uses: actions/cache@v2
+              with:
+                  path: ${{ env.pythonLocation }}
+                  key: ${{ hashFiles('requirements.txt') }}
+
+            - name: Install dependencies
+              run: |
+                  python -m pip install --upgrade pip
+                  pip install -r requirements.txt
+
+            # TODO: remove in your projects
+            - name: Install pre-commit hooks
+              run: |
+                  pre-commit install
