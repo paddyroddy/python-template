@@ -1,4 +1,4 @@
-name: Tests
+name: tests
 
 on: [push, pull_request]
 
@@ -14,14 +14,19 @@ jobs:
               with:
                   python-version: 3.9
 
-            - name: restore python cache
+            - name: set PY
+              run: echo "PY=$(python -VV | sha256sum | cut -d' ' -f1)" >> $GITHUB_ENV
+
+            - name: cache stuff
               uses: actions/cache@v2
               with:
-                  path: ${{ env.pythonLocation }}
-                  key: ${{ hashFiles('requirements.txt') }}
+                path: |
+                  ${{ env.pythonLocation }}
+                key: |
+                  pytest-${{ env.PY }}
 
             - name: Install dependencies
-              run: pip install -r requirements.txt
+              run: pip install pytest
 
-            # - name: Run tests
-            #   run: pytest --color=yes -v
+            - name: Run tests
+              run: pytest --color=yes -v
