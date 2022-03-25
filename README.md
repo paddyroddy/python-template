@@ -15,3 +15,10 @@ followed by `pre-commit install`. This only needs to be done once per repo,
 and from then on checks are made whenever committing. See steps
 [here](https://pre-commit.com/#automatically-enabling-pre-commit-on-repositories)
 to enable these checks always.
+
+## Automatically switch conda environment
+
+With the help of `direnv` and the
+[following](https://github.com/paddyroddy/dotfiles/blob/main/direnv/.direnvrc)
+in `~/.direnv` then one can switch `conda` environments automatically with the
+presence of `layout anaconda <environment>` in the project's `.envrc`.
