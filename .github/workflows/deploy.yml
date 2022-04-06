@@ -3,30 +3,30 @@ name: tests
 on: [push, pull_request]
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            - name: checkout source
-              uses: actions/checkout@v3
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout source
+        uses: actions/checkout@v3
 
-            - name: Set up Python
-              uses: actions/setup-python@v3
-              with:
-                  python-version: 3.9
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.9
 
-            - name: set PY
-              run: echo "PY=$(python -VV | sha256sum | cut -d' ' -f1)" >> $GITHUB_ENV
+      - name: set PY
+        run: echo "PY=$(python -VV | sha256sum | cut -d' ' -f1)" >> $GITHUB_ENV
 
-            - name: cache stuff
-              uses: actions/cache@v3
-              with:
-                path: |
-                  ${{ env.pythonLocation }}
-                key: |
-                  pytest-${{ env.PY }}
+      - name: cache stuff
+        uses: actions/cache@v3
+        with:
+          path: |
+            ${{ env.pythonLocation }}
+          key: |
+            pytest-${{ env.PY }}
 
-            - name: Install dependencies
-              run: pip install pytest
+      - name: Install dependencies
+        run: pip install pytest
 
-            - name: Run tests
-              run: pytest --color=yes -v
+      - name: Run tests
+        run: pytest --color=yes -v
