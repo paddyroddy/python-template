@@ -19,6 +19,10 @@ repos:
         args: [--fix=lf]
       - id: requirements-txt-fixer
       - id: trailing-whitespace
+  - repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.3.0
+    hooks:
+      - id: forbid-tabs
   - repo: https://gitlab.com/pycqa/flake8
     rev: 3.9.2
     hooks:
