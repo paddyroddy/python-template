@@ -1,0 +1,23 @@
+[tool.ruff]
+select = [
+  # pyflakes
+  "F",
+  # pycodestyle
+  "E",
+  "W",
+  # flake8-2020
+  "YTT",
+  # flake8-bugbear
+  "B",
+  # flake8-quotes
+  "Q",
+  # pylint
+  "PLE", "PLR", "PLW",
+]
+ignore = ["E741", "W605"]
+
+[tool.ruff.mccabe]
+max-complexity = 18
+
+[tool.mypy]
+plugins = "numpy.typing.mypy_plugin"
