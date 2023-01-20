@@ -1,23 +1,33 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools", "setuptools-scm"]
+
+[tool.mypy]
+plugins = "numpy.typing.mypy_plugin"
+
 [tool.ruff]
+ignore = ["E741", "W605"]
 select = [
-  # pyflakes
-  "F",
+  # flake8-bugbear
+  "B",
   # pycodestyle
   "E",
+  # pyflakes
+  "F",
+  # pylint
+  "PLE",
+  "PLR",
+  "PLW",
+  # flake8-quotes
+  "Q",
   "W",
   # flake8-2020
   "YTT",
-  # flake8-bugbear
-  "B",
-  # flake8-quotes
-  "Q",
-  # pylint
-  "PLE", "PLR", "PLW",
 ]
-ignore = ["E741", "W605"]
 
 [tool.ruff.mccabe]
 max-complexity = 18
 
-[tool.mypy]
-plugins = "numpy.typing.mypy_plugin"
+[tool.tomlsort]
+all = true
+trailing_comma_inline_array = true
