@@ -2,16 +2,36 @@
 build-backend = "setuptools.build_meta"
 requires = ["setuptools", "setuptools-scm"]
 
+[project]
+authors = [{email = "test@gmail.com", name = ""}]
+classifiers = ["Programming Language :: Python :: 3"]
+dependencies = []
+description = ""
+keywords = []
+license = {text = "BSD-3-Clause"}
+name = "template"
+readme = "README.md"
+requires-python = "~=3.10"
+version = "0.0.1"
+
+[project.optional-dependencies]
+dev = [
+  "black",
+  "mypy",
+  "pre-commit",
+  "pytest",
+  "pytest-cov",
+]
+
 [tool.isort]
 profile = "black"
 
 [tool.mypy]
-plugins = "numpy.typing.mypy_plugin"
+plugins = ["numpy.typing.mypy_plugin", "pydantic.mypy"]
 
 [tool.ruff]
 fix = true
 force-exclude = true
-ignore = ["E741", "W605"]
 select = [
   # flake8-bugbear
   "B",
@@ -19,6 +39,8 @@ select = [
   "E",
   # pyflakes
   "F",
+  # isort
+  "I",
   # pylint
   "PLE",
   "PLR",
