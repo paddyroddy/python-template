@@ -33,4 +33,4 @@ jobs:
         run: pip install .[dev]
 
       - name: Run tests
-        run: pytest -v --color=yes --cov=sleplet --cov-report=xml
+        run: pytest -v --color=yes --cov=.
