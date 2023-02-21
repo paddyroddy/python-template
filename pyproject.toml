@@ -22,7 +22,7 @@ dynamic = [
 keywords = []
 name = "example"
 readme = "README.md"
-requires-python = "~=3.10"
+requires-python = ">=3.8"
 license.text = "BSD-3-Clause"
 optional-dependencies.dev = [
     "black",
