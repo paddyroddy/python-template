@@ -57,22 +57,30 @@ testpaths = [
 fix = true
 force-exclude = true
 select = [
-    # flake8-bugbear
+    "A",
     "B",
-    # pycodestyle
+    "C",
+    "DTZ",
     "E",
-    # pyflakes
+    "EM",
     "F",
-    # isort
+    "FBT",
     "I",
-    # pylint
+    "ICN",
+    "ISC",
+    "N",
+    "PLC",
     "PLE",
     "PLR",
     "PLW",
-    # flake8-quotes
     "Q",
+    "RUF",
+    "S",
+    "SIM",
+    "T",
+    "TID",
+    "UP",
     "W",
-    # flake8-2020
     "YTT",
 ]
 isort.known-first-party = ["example"]
