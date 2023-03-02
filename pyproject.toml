@@ -85,6 +85,7 @@ select = [
 ]
 isort.known-first-party = ["example"]
 mccabe.max-complexity = 18
+pep8-naming.classmethod-decorators = ["classmethod", "pydantic.validator"]
 
 [tool.setuptools_scm]
 
