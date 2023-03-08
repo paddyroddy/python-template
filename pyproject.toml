@@ -56,6 +56,9 @@ testpaths = [
 [tool.ruff]
 fix = true
 force-exclude = true
+per-file-ignores = {"tests/*" = [
+    "S101",
+]}
 select = [
     "A",
     "B",
@@ -83,9 +86,6 @@ select = [
     "W",
     "YTT",
 ]
-per-file-ignores = {"tests/*" = [
-    "S101",
-]}
 isort.known-first-party = ["example"]
 mccabe.max-complexity = 18
 pep8-naming.classmethod-decorators = [
@@ -97,6 +97,8 @@ pep8-naming.classmethod-decorators = [
 
 [tool.tomlsort]
 sort_inline_arrays = false
+sort_inline_tables = true
+sort_table_keys = true
 spaces_indent_inline_array = 4
 trailing_comma_inline_array = true
 
