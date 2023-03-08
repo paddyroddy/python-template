@@ -23,7 +23,7 @@ keywords = []
 name = "example"
 readme = "README.md"
 requires-python = ">=3.8"
-license.text = "BSD-3-Clause"
+license.file = "LICENSE.md"
 optional-dependencies.dev = [
     "black",
     "mypy",
