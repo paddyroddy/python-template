@@ -2,7 +2,7 @@
 
 Template for python development
 
-[![Documentation](https://github.com/astro-informatics/python-template/actions/workflows/documentation.yml/badge.svg)](https://paddyroddy.github.io/python-template)
+[![Documentation](https://github.com/paddyroddy/python-template/actions/workflows/documentation.yml/badge.svg)](https://paddyroddy.github.io/python-template)
 [![tests](https://github.com/paddyroddy/python-template/actions/workflows/tests.yml/badge.svg)](https://github.com/paddyroddy/python-template/actions/workflows/tests.yml)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 
