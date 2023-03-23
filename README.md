@@ -2,7 +2,7 @@
 
 Template for python development
 
-[![Documentation](https://github.com/astro-informatics/sleplet/actions/workflows/documentation.yml/badge.svg)](https://astro-informatics.github.io/sleplet)
+[![Documentation](https://github.com/paddyroddy/python-template/actions/workflows/documentation.yml/badge.svg)](https://paddyroddy.github.io/python-template)
 [![tests](https://github.com/paddyroddy/python-template/actions/workflows/tests.yml/badge.svg)](https://github.com/paddyroddy/python-template/actions/workflows/tests.yml)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 
@@ -10,7 +10,7 @@ Template for python development
 
 Run
 
-```{sh}
+```sh
 pip install .
 ```
 
@@ -18,12 +18,12 @@ pip install .
 
 Run
 
-```{sh}
+```sh
 pip install -e .[dev]
 ```
 
 then
 
-```{sh}
+```sh
 pre-commit install
 ```
