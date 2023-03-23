@@ -30,9 +30,6 @@ optional-dependencies.dev = [
     "pre-commit",
     "tox",
 ]
-optional-dependencies.docs = [
-    "pdoc3",
-]
 urls.homepage = "https://github.com/paddyroddy/python-template"
 
 [tool.coverage]
