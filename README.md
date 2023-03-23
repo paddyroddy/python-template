@@ -10,7 +10,7 @@ Template for python development
 
 Run
 
-```{sh}
+```sh
 pip install .
 ```
 
@@ -18,12 +18,12 @@ pip install .
 
 Run
 
-```{sh}
+```sh
 pip install -e .[dev]
 ```
 
 then
 
-```{sh}
+```sh
 pre-commit install
 ```
