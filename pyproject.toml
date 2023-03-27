@@ -33,9 +33,9 @@ optional-dependencies.dev = [
 optional-dependencies.docs = [
     "pdoc3",
 ]
-urls.Homepage = "https://github.com/paddyroddy/python-template"
 urls."Bug Tracker" = "https://github.com/paddyroddy/python-template/issues"
 urls.Documentation = "https://paddyroddy.github.io/python-template/"
+urls.Homepage = "https://github.com/paddyroddy/python-template"
 urls."Source Code" = "https://github.com/paddyroddy/python-template"
 
 [tool.coverage]
