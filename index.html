@@ -24,37 +24,35 @@
 <section id="section-intro">
 <h1 id="python">python</h1>
 <p>Template for python development</p>
-<p><a href="https://paddyroddy.github.io/python-template"><img alt="Documentation" src="https://github.com/paddyroddy/python-template/actions/workflows/documentation.yml/badge.svg"></a>
-<a href="https://github.com/paddyroddy/python-template/actions/workflows/tests.yml"><img alt="tests" src="https://github.com/paddyroddy/python-template/actions/workflows/tests.yml/badge.svg"></a>
+<p><a href="https://pypi.org/project/example"><img alt="PyPI" src="https://badge.fury.io/py/example.svg"></a>
+<a href="https://www.python.org"><img alt="Python" src="https://img.shields.io/pypi/pyversions/example"></a>
+<a href="https://paddyroddy.github.io/python-template"><img alt="Documentation" src="https://img.shields.io/badge/Documentation-API-blueviolet.svg"></a>
+<a href="https://github.com/paddyroddy/python-template/actions/workflows/test.yml"><img alt="Test" src="https://github.com/paddyroddy/python-template/actions/workflows/test.yml/badge.svg"></a>
 <a href="https://github.com/pre-commit/pre-commit"><img alt="pre-commit" src="https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&amp;logoColor=white"></a></p>
 <h2 id="installation">Installation</h2>
-<p>Run</p>
-<pre><code class="language-sh">pip install .
-</code></pre>
-<h3 id="developer-installation">Developer Installation</h3>
-<p>Run</p>
-<pre><code class="language-sh">pip install -e .[dev]
-</code></pre>
-<p>then</p>
-<pre><code class="language-sh">pre-commit install
+<p>To install the latest development version of <code><a title="example" href="#example">example</a></code> clone this repository
+and run</p>
+<pre><code class="language-sh">pip install -e .
 </code></pre>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
-<pre><code class="python">&#34;&#34;&#34;
-.. include:: ../../README.md
-&#34;&#34;&#34;</code></pre>
+<pre><code class="python">&#34;&#34;&#34;.. include:: ../../README.md&#34;&#34;&#34;
+
+import logging
+
+from ._version import __version__  # noqa: F401
+
+logging.basicConfig(
+    format=&#34;[%(asctime)s] [%(levelname)s] --- %(message)s (%(filename)s:%(lineno)s)&#34;,
+    datefmt=&#34;%Y-%m-%d %H:%M:%S&#34;,
+    level=logging.INFO,
+)
+logger = logging.getLogger(__name__)</code></pre>
 </details>
 </section>
 <section>
-<h2 class="section-title" id="header-submodules">Sub-modules</h2>
-<dl>
-<dt><code class="name"><a title="example.utils" href="utils/index.html">example.utils</a></code></dt>
-<dd>
-<div class="desc"></div>
-</dd>
-</dl>
 </section>
 <section>
 </section>
@@ -68,20 +66,12 @@
 <div class="toc">
 <ul>
 <li><a href="#python">python</a><ul>
-<li><a href="#installation">Installation</a><ul>
-<li><a href="#developer-installation">Developer Installation</a></li>
-</ul>
-</li>
+<li><a href="#installation">Installation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <ul id="index">
-<li><h3><a href="#header-submodules">Sub-modules</a></h3>
-<ul>
-<li><code><a title="example.utils" href="utils/index.html">example.utils</a></code></li>
-</ul>
-</li>
 </ul>
 </nav>
 </main>
