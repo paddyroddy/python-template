@@ -20,7 +20,7 @@ jobs:
         with:
           path: |
             .tox
-            ~/.cache/sleplet
+            ~/.cache/example
           key: tox-${{ hashFiles('pyproject.toml') }}
 
       - name: Set up python
