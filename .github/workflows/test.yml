@@ -1,4 +1,4 @@
-name: Tests
+name: Test
 
 on:
   push:
@@ -9,22 +9,28 @@ on:
       - "**.md"
 
 jobs:
-  tests:
+  test:
+    name: py${{ matrix.python-version }}
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.9", "3.10"]
     steps:
       - name: Checkout source
         uses: actions/checkout@v3
 
-      - name: Cache tox
+      - name: Cache tox/pooch
         uses: actions/cache@v3
         with:
-          path: .tox
+          path: |
+            .tox
+            ~/.cache/example
           key: tox-${{ hashFiles('pyproject.toml') }}
 
       - name: Set up python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.10"
+          python-version: ${{ matrix.python-version }}
           cache: "pip"
           cache-dependency-path: "pyproject.toml"
 
