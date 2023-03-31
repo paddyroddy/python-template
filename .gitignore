@@ -2,3 +2,4 @@ __pycache__
 _version.py
 .coverage
 *.egg-info
+html
