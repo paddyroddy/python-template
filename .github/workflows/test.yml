@@ -1,4 +1,4 @@
-name: Tests
+name: Test
 
 on:
   push:
@@ -9,16 +9,18 @@ on:
       - "**.md"
 
 jobs:
-  tests:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source
         uses: actions/checkout@v3
 
-      - name: Cache tox
+      - name: Cache tox/pooch
         uses: actions/cache@v3
         with:
-          path: .tox
+          path: |
+            .tox
+            ~/.cache/sleplet
           key: tox-${{ hashFiles('pyproject.toml') }}
 
       - name: Set up python
