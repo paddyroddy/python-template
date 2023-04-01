@@ -1,4 +1,6 @@
-""".. include:: ../../README.md"""
+"""API of the `example` package. See [PyPI](https://pypi.org/project/example) for
+the rest of the documentation.
+"""
 
 import logging
 

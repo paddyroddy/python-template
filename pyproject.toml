@@ -71,16 +71,24 @@ testpaths = [
 [tool.ruff]
 fix = true
 force-exclude = true
-per-file-ignores = {"tests/*" = [
+ignore = [
+    "D203",
+    "D213",
+]
+per-file-ignores = {"__init__.py" = [
+    "D205",
+], "test_*" = [
     "S101",
 ]}
 select = [
     "A",
+    "ANN",
     "ARG",
     "B",
     "BLE",
     "C",
     "COM",
+    "D",
     "DJ",
     "DTZ",
     "E",
@@ -89,8 +97,10 @@ select = [
     "EXE",
     "F",
     "FBT",
+    "G",
     "I",
     "ICN",
+    "INP",
     "ISC",
     "N",
     "NPY",
@@ -107,9 +117,11 @@ select = [
     "RUF",
     "S",
     "SIM",
+    "SLF",
     "T",
     "TCH",
     "TID",
+    "TRY",
     "UP",
     "W",
     "YTT",

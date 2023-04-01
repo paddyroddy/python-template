@@ -1,2 +1,5 @@
+"""An example test module."""
+
+
 def test_dummy_example() -> None:
-    """a stupid test such that the CI passes."""
+    """A stupid test such that the CI passes."""
