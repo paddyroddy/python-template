@@ -124,6 +124,7 @@ select = [
     "TRY",
     "UP",
     "W",
+    "YTT",
 ]
 target-version = "py38"
 isort.known-first-party = ["example"]
