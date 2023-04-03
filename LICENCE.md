@@ -1,4 +1,4 @@
-BSD 3-Clause License
+BSD 3-Clause Licence
 
 Copyright (c) 2021-2023, Patrick Roddy
 

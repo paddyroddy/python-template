@@ -28,7 +28,7 @@ keywords = []
 name = "example"
 readme = "README.md"
 requires-python = ">=3.8"
-license.file = "LICENSE.md"
+license.file = "LICENCE.md"
 optional-dependencies.dev = [
     "black",
     "build",
