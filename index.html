@@ -37,12 +37,17 @@ import logging
 
 from ._version import __version__  # noqa: F401
 
-logging.basicConfig(
-    format=&#34;[%(asctime)s] [%(levelname)s] --- %(message)s (%(filename)s:%(lineno)s)&#34;,
+_logger = logging.getLogger(__name__)
+
+_formatter = logging.Formatter(
+    &#34;%(levelname)s [%(asctime)s] sleplet: %(message)s&#34;,
     datefmt=&#34;%Y-%m-%d %H:%M:%S&#34;,
-    level=logging.INFO,
 )
-logger = logging.getLogger(__name__)</code></pre>
+_console_handler = logging.StreamHandler()
+_console_handler.setFormatter(_formatter)
+_logger.addHandler(_console_handler)
+_logger.setLevel(&#34;INFO&#34;)
+_logger.propagate = False</code></pre>
 </details>
 </section>
 <section>
