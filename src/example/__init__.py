@@ -1,6 +1,4 @@
-"""API of the `example` package. See [PyPI](https://pypi.org/project/example) for
-the rest of the documentation.
-"""
+""".. include:: ./../../documentation/DOCUMENTATION.md"""  # noqa: D400,D415
 
 import logging
 
