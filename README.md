@@ -8,14 +8,14 @@
 
 ## Installation
 
-The recommended way to install `example` is via
+The recommended way to install `Example` is via
 [pip](https://pypi.org/project/pip/)
 
 ```sh
 pip install example
 ```
 
-To install the latest development version of `example`, clone this repository
+To install the latest development version of `Example`, clone this repository
 and run
 
 ```sh

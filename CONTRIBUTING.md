@@ -115,7 +115,7 @@ Once it's filed:
 
 ### Suggesting Enhancements
 
-This section guides you through submitting an enhancement suggestion for `example`,
+This section guides you through submitting an enhancement suggestion for `Example`,
 **including completely new features and minor improvements to existing**
 **functionality**. Following these guidelines will help maintainers and the
 community to understand your suggestion and find related suggestions.
@@ -146,6 +146,6 @@ Enhancement suggestions are tracked as
 - **Describe the current behaviour** and **explain which behaviour you expected**
   **to see instead** and why. At this point you can also tell which alternatives
   do not work for you.
-- **Explain why this enhancement would be useful** to most `example` users. You
+- **Explain why this enhancement would be useful** to most `Example` users. You
   may also want to point out the other projects that solved it better and which
   could serve as inspiration.
