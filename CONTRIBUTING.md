@@ -28,7 +28,7 @@ forward to your contributions. 🎉
 ## I Have a Question
 
 > If you want to ask a question, we assume that you have read the available
-> [Documentation](https://paddyroddy.github.io/example).
+> [Documentation](https://paddyroddy.github.io/python-template).
 
 Before you ask a question, it is best to search for existing
 [Issues](https://github.com/paddyroddy/python-template/issues) that might help
@@ -66,7 +66,7 @@ steps in advance to help us fix any potential bug as fast as possible.
 - Make sure that you are using the latest version.
 - Determine if your bug is really a bug and not an error on your side e.g. using
   incompatible environment components/versions (Make sure that you have read the
-  [documentation](https://paddyroddy.github.io/example). If you are
+  [documentation](https://paddyroddy.github.io/python-template). If you are
   looking for support, you might want to check [this section](#i-have-a-question)).
 - To see if other users have experienced (and potentially already solved) the
   same issue you are having, check if there is not already a bug report existing
@@ -123,7 +123,7 @@ community to understand your suggestion and find related suggestions.
 #### Before Submitting an Enhancement
 
 - Make sure that you are using the latest version.
-- Read the [documentation](https://paddyroddy.github.io/example)
+- Read the [documentation](https://paddyroddy.github.io/python-template)
   carefully and find out if the functionality is already covered, maybe by an
   individual configuration.
 - Perform a [search](https://github.com/paddyroddy/python-template/issues) to see
