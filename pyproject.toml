@@ -26,10 +26,7 @@ dynamic = [
 ]
 keywords = []
 name = "example"
-readme = "README.md"
-requires-python = ">=3.8"
-license.file = "LICENCE.md"
-optional-dependencies.dev = [
+optional-dependencies = {dev = [
     "black",
     "build",
     "mypy",
@@ -37,13 +34,14 @@ optional-dependencies.dev = [
     "ruff",
     "tox",
     "twine",
-]
-optional-dependencies.docs = [
+], docs = [
     "pdoc3",
-]
-optional-dependencies.readme = [
+], readme = [
     "pytest-codeblocks",
-]
+]}
+readme = "README.md"
+requires-python = ">=3.8"
+license.file = "LICENCE.md"
 urls.Code = "https://github.com/paddyroddy/python-template"
 urls.Documentation = "https://paddyroddy.github.io/python-template/"
 urls.Homepage = "https://github.com/paddyroddy/python-template"
