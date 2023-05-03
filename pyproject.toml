@@ -26,10 +26,7 @@ dynamic = [
 ]
 keywords = []
 name = "example"
-readme = "README.md"
-requires-python = ">=3.8"
-license.file = "LICENCE.md"
-optional-dependencies.dev = [
+optional-dependencies = {dev = [
     "black",
     "build",
     "mypy",
@@ -37,13 +34,14 @@ optional-dependencies.dev = [
     "ruff",
     "tox",
     "twine",
-]
-optional-dependencies.docs = [
+], docs = [
     "pdoc3",
-]
-optional-dependencies.readme = [
+], readme = [
     "pytest-codeblocks",
-]
+]}
+readme = "README.md"
+requires-python = ">=3.8"
+license.file = "LICENCE.md"
 urls.Code = "https://github.com/paddyroddy/python-template"
 urls.Documentation = "https://paddyroddy.github.io/python-template/"
 urls.Homepage = "https://github.com/paddyroddy/python-template"
@@ -51,7 +49,9 @@ urls.Issues = "https://github.com/paddyroddy/python-template/issues"
 
 [tool.coverage]
 report = {skip_covered = true, sort = "cover"}
-run = {branch = true, parallel = true, source = ["example"]}
+run = {branch = true, parallel = true, source = [
+    "example",
+]}
 paths.source = [
     "src",
     ".tox*/*/lib/python*/site-packages",
@@ -77,6 +77,15 @@ ignore = [
     "D203",
     "D213",
 ]
+isort = {known-first-party = [
+    "example",
+], section-order = [
+    "future",
+    "standard-library",
+    "third-party",
+    "first-party",
+    "local-folder",
+]}
 per-file-ignores = {"test_*" = [
     "S101",
 ]}
@@ -127,7 +136,6 @@ select = [
     "YTT",
 ]
 target-version = "py38"
-isort.known-first-party = ["example"]
 mccabe.max-complexity = 18
 pep8-naming.classmethod-decorators = [
     "classmethod",
@@ -144,6 +152,7 @@ spaces_indent_inline_array = 4
 trailing_comma_inline_array = true
 overrides."project.classifiers".inline_arrays = false
 overrides."tool.coverage.paths.source".inline_arrays = false
+overrides."tool.ruff.isort.section-order".inline_arrays = false
 
 [tool.tox]
 legacy_tox_ini = """
