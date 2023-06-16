@@ -158,18 +158,22 @@ overrides."tool.ruff.isort.section-order".inline_arrays = false
 legacy_tox_ini = """
     [gh-actions]
     python =
-        3.8: py38
         3.9: py39
         3.10: py310
+        3.11: py311
+
+    [gh-actions:env]
+    PLATFORM =
+        ubuntu-latest: linux
+        macos-latest: macos
 
     [testenv]
     commands =
-        pytest --cov --slow
+        pytest --cov --cov-report=lcov --slow
     deps =
         pytest-cov
         pytest-skip-slow
 
     [tox]
-    env_list =
-        py3{8,9,10}
+    env_list = py{39,310,311}-{linux,macos}
 """
