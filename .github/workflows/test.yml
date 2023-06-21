@@ -14,13 +14,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python-version: ["3.8", "3.9", "3.10"]
-        os: ["ubuntu-latest"]
-        include:
-          - os: macos-latest
-            python-version: "3.10"
-          - os: windows-latest
-            python-version: "3.10"
+        os: [macos-latest, ubuntu-latest, windows-latest]
+        python-version: ["3.9", "3.10", "3.11"]
     steps:
       - name: Checkout source
         uses: actions/checkout@v3
@@ -28,12 +23,12 @@ jobs:
       - name: Cache tox/pooch
         uses: actions/cache@v3
         with:
-          path: |
+          path: |-
             .tox
             ~/.cache/example
-          key: tox-${{ hashFiles('pyproject.toml') }}
+          key: test-${{ hashFiles('pyproject.toml') }}
 
-      - name: Set up python
+      - name: Set up python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
@@ -46,4 +41,7 @@ jobs:
       - name: Test with tox
         run: tox run
         env:
-          PLATFORM: ${{ matrix.platform }}
+          OS: ${{ matrix.os }}
+
+      - name: Coverage
+        uses: coverallsapp/github-action@v2

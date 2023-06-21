@@ -163,9 +163,10 @@ legacy_tox_ini = """
         3.11: py311
 
     [gh-actions:env]
-    PLATFORM =
+    OS =
         ubuntu-latest: linux
         macos-latest: macos
+        windows-latest: windows
 
     [testenv]
     commands =
@@ -175,5 +176,5 @@ legacy_tox_ini = """
         pytest-skip-slow
 
     [tox]
-    env_list = py{39,310,311}-{linux,macos}
+    env_list = py{39,310,311}-{linux,macos,windows}
 """
