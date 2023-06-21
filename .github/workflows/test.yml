@@ -43,5 +43,5 @@ jobs:
         env:
           OS: ${{ matrix.os }}
 
-      - name: Coverage
-        uses: coverallsapp/github-action@v2
+    #   - name: Coverage
+    #     uses: coverallsapp/github-action@v2
