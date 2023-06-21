@@ -14,9 +14,9 @@ classifiers = [
     "Operating System :: POSIX",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
     "Typing :: Typed",
 ]
 dependencies = []
@@ -40,7 +40,7 @@ optional-dependencies = {dev = [
     "pytest-codeblocks",
 ]}
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 license.file = "LICENCE.md"
 urls.Code = "https://github.com/paddyroddy/python-template"
 urls.Documentation = "https://paddyroddy.github.io/python-template/"
@@ -135,7 +135,7 @@ select = [
     "W",
     "YTT",
 ]
-target-version = "py38"
+target-version = "py39"
 mccabe.max-complexity = 18
 pep8-naming.classmethod-decorators = [
     "classmethod",
@@ -163,9 +163,10 @@ legacy_tox_ini = """
         3.11: py311
 
     [gh-actions:env]
-    PLATFORM =
+    OS =
         ubuntu-latest: linux
         macos-latest: macos
+        windows-latest: windows
 
     [testenv]
     commands =
@@ -175,5 +176,5 @@ legacy_tox_ini = """
         pytest-skip-slow
 
     [tox]
-    env_list = py{39,310,311}-{linux,macos}
+    env_list = py{39,310,311}-{linux,macos,windows}
 """
