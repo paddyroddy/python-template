@@ -6,8 +6,6 @@ on:
       - main
       - "renovate/**"
   pull_request:
-    paths-ignore:
-      - "**.md"
 
 jobs:
   test:
