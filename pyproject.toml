@@ -17,6 +17,7 @@ classifiers = [
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "Typing :: Typed",
 ]
 dependencies = []
@@ -161,6 +162,7 @@ legacy_tox_ini = """
         3.9: py39
         3.10: py310
         3.11: py311
+        3.12: py312
 
     [gh-actions:env]
     OS =
@@ -176,5 +178,5 @@ legacy_tox_ini = """
         pytest-skip-slow
 
     [tox]
-    env_list = py{39,310,311}-{linux,macos,windows}
+    env_list = py{39,310,311,312}-{linux,macos,windows}
 """
