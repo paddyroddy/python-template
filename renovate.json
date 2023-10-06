@@ -13,7 +13,7 @@
   "packageRules": [
     {
       "commitMessageTopic": "{{depName}}",
-      "matchManagers": ["pre-commit"]
+      "matchManagers": ["github-actions", "pre-commit"]
     }
   ]
 }
