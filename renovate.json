@@ -10,6 +10,5 @@
     ":enablePreCommit"
   ],
   "commitMessageAction": "Renovate:",
-  "commitMessageExtra": "{{{replace 'to' '@' commitMessageExtra}}}",
-  "commitMessageTopic": "dependency"
+  "commitMessageTopic": "{{depName}}"
 }
