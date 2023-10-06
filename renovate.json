@@ -11,5 +11,5 @@
   ],
   "commitMessageAction": "Renovate:",
   "commitMessageExtra": "{{{replace 'to' '@' commitMessageExtra}}}",
-  "commitMessageTopic": "{{depName}}"
+  "commitMessageTopic": "dependency"
 }
