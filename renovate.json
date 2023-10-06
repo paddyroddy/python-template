@@ -10,5 +10,10 @@
     ":enablePreCommit"
   ],
   "commitMessageAction": "Renovate:",
-  "commitMessageTopic": "{{depName}}"
+  "packageRules": [
+    {
+      "commitMessageTopic": "{{depName}}",
+      "matchManagers": ["pre-commit"]
+    }
+  ]
 }
