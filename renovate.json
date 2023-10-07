@@ -12,7 +12,7 @@
   "commitMessageAction": "Renovate:",
   "packageRules": [
     {
-      "commitMessageTopic": "{{depName}}",
+      "commitMessageTopic": "{{depNameLinked}}",
       "matchManagers": ["github-actions", "pre-commit"]
     }
   ]
