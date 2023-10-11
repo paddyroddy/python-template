@@ -28,7 +28,7 @@ jobs:
           key: test-${{ hashFiles('pyproject.toml') }}
 
       - name: Set up python ${{ matrix.python-version }}
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v3
         with:
           python-version: ${{ matrix.python-version }}
           cache: "pip"
