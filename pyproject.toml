@@ -62,7 +62,6 @@ paths.source = [
 explicit_package_bases = true
 plugins = [
     "numpy.typing.mypy_plugin",
-    "pydantic.mypy",
 ]
 
 [tool.pytest.ini_options]
@@ -140,7 +139,6 @@ target-version = "py39"
 mccabe.max-complexity = 18
 pep8-naming.classmethod-decorators = [
     "classmethod",
-    "pydantic.validator",
 ]
 
 [tool.setuptools_scm]
