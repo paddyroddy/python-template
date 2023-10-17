@@ -17,13 +17,6 @@ jobs:
           cache: "pip"
           cache-dependency-path: "pyproject.toml"
 
-      - name: Cache pooch
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.cache/example
-          key: tox-${{ hashFiles('pyproject.toml') }}
-
       - name: Install dependencies
         run: python -m pip install -e .[readme]
 
@@ -42,13 +35,6 @@ jobs:
           python-version: "3.12"
           cache: "pip"
           cache-dependency-path: "pyproject.toml"
-
-      - name: Cache pooch
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.cache/example
-          key: tox-${{ hashFiles('pyproject.toml') }}
 
       - name: Install dependencies
         run: python -m pip install -e .[docs]

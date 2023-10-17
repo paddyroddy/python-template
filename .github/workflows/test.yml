@@ -26,12 +26,10 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
 
-      - name: Cache tox/pooch
+      - name: Cache tox
         uses: actions/cache@v3
         with:
-          path: |-
-            .tox
-            ~/.cache/example
+          path: .tox
           key: test-${{ hashFiles('pyproject.toml') }}
 
       - name: Set up python ${{ matrix.python-version }}
