@@ -37,8 +37,6 @@ optional-dependencies = {dev = [
     "twine",
 ], docs = [
     "pdoc3",
-], readme = [
-    "pytest-codeblocks",
 ]}
 readme = "README.md"
 requires-python = ">=3.9"
@@ -62,7 +60,6 @@ paths.source = [
 explicit_package_bases = true
 plugins = [
     "numpy.typing.mypy_plugin",
-    "pydantic.mypy",
 ]
 
 [tool.pytest.ini_options]
@@ -140,7 +137,6 @@ target-version = "py39"
 mccabe.max-complexity = 18
 pep8-naming.classmethod-decorators = [
     "classmethod",
-    "pydantic.validator",
 ]
 
 [tool.setuptools_scm]
@@ -175,7 +171,6 @@ legacy_tox_ini = """
         pytest --cov --cov-report=lcov
     deps =
         pytest-cov
-        pytest-skip-slow
 
     [tox]
     env_list = py{39,310,311,312}-{linux,macos,windows}
