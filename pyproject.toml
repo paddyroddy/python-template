@@ -28,7 +28,6 @@ dynamic = [
 keywords = []
 name = "example"
 optional-dependencies = {dev = [
-    "black",
     "build",
     "mypy",
     "pre-commit",
