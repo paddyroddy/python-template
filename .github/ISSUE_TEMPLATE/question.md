@@ -1,7 +1,7 @@
 ---
 name: Question
 about: General Questions About Using Example
-title: [QUESTION]
+title: "[QUESTION]"
 labels: question
 assignees: paddyroddy
 ---
