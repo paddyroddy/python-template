@@ -19,8 +19,10 @@ jobs:
           - ubuntu-latest
           - windows-latest
         python-version:
+          - "3.9"
           - "3.10"
           - "3.11"
+          - "3.12"
     steps:
       - uses: paddyroddy/.github/actions/python/tox@v0.2.0
         with:
