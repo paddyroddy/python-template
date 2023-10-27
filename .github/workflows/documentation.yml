@@ -12,7 +12,7 @@ jobs:
       - uses: paddyroddy/.github/actions/python/pdoc@v0.2.0
         with:
           docs-dependency-section: .[docs]
-          gh-pages-publish-directory: ./html/sleplet
-          project-directory: ./src/sleplet
+          gh-pages-publish-directory: ./html/example
+          project-directory: ./src/example
           pyproject-toml: ./pyproject.toml
           template-directory: ./documentation
