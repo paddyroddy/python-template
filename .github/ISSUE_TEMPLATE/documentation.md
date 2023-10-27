@@ -1,7 +1,7 @@
 ---
 name: Documentation
 about: How Can We Improve the Documentation
-title: [DOCS]
+title: "[DOCS]"
 labels: documentation
 assignees: paddyroddy
 ---
