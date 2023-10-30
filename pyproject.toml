@@ -72,7 +72,8 @@ fix = true
 force-exclude = true
 ignore = [
     "D203",
-    "D213",
+    "D212",
+    "D407",
 ]
 isort = {known-first-party = [
     "example",
