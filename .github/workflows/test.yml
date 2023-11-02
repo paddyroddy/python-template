@@ -24,7 +24,7 @@ jobs:
           - "3.11"
           - "3.12"
     steps:
-      - uses: paddyroddy/.github/actions/python/tox@a4f050199bd1fbb2d8fceebaa0278517c4992047 # v0
+      - uses: paddyroddy/.github/actions/python/tox@a4f050199bd1fbb2d8fceebaa0278517c4992047 # v0.21.0
         with:
           cache-path: |-
             .tox
