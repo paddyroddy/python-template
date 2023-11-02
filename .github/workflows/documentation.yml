@@ -9,7 +9,7 @@ jobs:
   documentation:
     runs-on: ubuntu-latest
     steps:
-      - uses: paddyroddy/.github/actions/python/pdoc@a4f050199bd1fbb2d8fceebaa0278517c4992047 # v0.21.0
+      - uses: paddyroddy/.github/actions/python/pdoc@a4f050199bd1fbb2d8fceebaa0278517c4992047 # v0
         with:
           docs-dependency-section: .[docs]
           gh-pages-publish-directory: ./html/example

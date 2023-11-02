@@ -8,7 +8,7 @@ jobs:
   update-licence-year:
     runs-on: ubuntu-latest
     steps:
-      - uses: paddyroddy/.github/actions/licence@a4f050199bd1fbb2d8fceebaa0278517c4992047 # v0.21.0
+      - uses: paddyroddy/.github/actions/licence@a4f050199bd1fbb2d8fceebaa0278517c4992047 # v0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           licence-file: ./LICENCE.md
