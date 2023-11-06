@@ -85,6 +85,7 @@ isort = {known-first-party = [
     "local-folder",
 ]}
 per-file-ignores = {"tests*" = [
+    "INP001",
     "S101",
 ]}
 select = [
