@@ -39,11 +39,16 @@ optional-dependencies = {dev = [
 ]}
 readme = "README.md"
 requires-python = ">=3.9"
+urls = {Code = """
+    https://github.com/paddyroddy/python-template
+    """, Documentation = """
+    https://paddyroddy.github.io/python-template
+    """, Homepage = """
+    https://github.com/paddyroddy/python-template
+    """, Issues = """
+    https://github.com/paddyroddy/python-template/issues
+"""}
 license.file = "LICENCE.md"
-urls.Code = "https://github.com/paddyroddy/python-template"
-urls.Documentation = "https://paddyroddy.github.io/python-template/"
-urls.Homepage = "https://github.com/paddyroddy/python-template"
-urls.Issues = "https://github.com/paddyroddy/python-template/issues"
 
 [tool.coverage]
 report = {skip_covered = true, sort = "cover"}
