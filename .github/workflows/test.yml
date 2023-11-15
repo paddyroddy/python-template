@@ -1,5 +1,6 @@
 name: Test
 
+# yamllint disable-line rule:truthy
 on:
   push:
     branches:
@@ -24,11 +25,11 @@ jobs:
           - "3.11"
           - "3.12"
     steps:
-      - uses: paddyroddy/.github/actions/python/tox@0860bb5de5029a6ef6adbd1da9655eafc9c8231f # v0
+      # yamllint disable-line rule:line-length
+      - uses: paddyroddy/.github/actions/python/tox@7958ff821536746ea7a65cd1fa8737d05fa9b870 # v0
         with:
           cache-path: |-
             .tox
-          coverage-with-coveralls: no
           operating-system: ${{ matrix.os }}
           pyproject-toml: ./pyproject.toml
           python-version: ${{ matrix.python-version }}
