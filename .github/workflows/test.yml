@@ -30,7 +30,6 @@ jobs:
         with:
           cache-path: |-
             .tox
-          coverage-with-coveralls: no
           operating-system: ${{ matrix.os }}
           pyproject-toml: ./pyproject.toml
           python-version: ${{ matrix.python-version }}
