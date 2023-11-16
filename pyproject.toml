@@ -47,6 +47,11 @@ Documentation = "https://paddyroddy.github.io/python-template"
 Homepage = "https://github.com/paddyroddy/python-template"
 Issues = "https://github.com/paddyroddy/python-template/issues"
 
+[tool.check-manifest]
+ignore = [
+    "src/example/_version.py",
+]
+
 [tool.coverage]
 report = {skip_covered = true, sort = "cover"}
 run = {branch = true, parallel = true, source = [
