@@ -13,7 +13,5 @@ jobs:
       # yamllint disable-line rule:line-length
       - uses: paddyroddy/.github/actions/python/deployment@16317a64109e3a2f8351ec767bfad16bd78007c0 # v0
         with:
-          pypi-api-token: ${{ secrets.PYPI_API_TOKEN }}
           pyproject-toml: ./pyproject.toml
           python-version: "3.12"
-          test-pypi-api-token: ${{ secrets.TEST_PYPI_API_TOKEN }}
