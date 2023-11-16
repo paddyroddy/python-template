@@ -1,0 +1,6 @@
+exclude .*
+exclude *.in
+include *.md
+prune .*
+prune documentation
+prune tests
