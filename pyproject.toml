@@ -39,7 +39,6 @@ optional-dependencies = {dev = [
 ]}
 readme = "README.md"
 requires-python = ">=3.9"
-license.file = "LICENCE.md"
 urls = {Code = """\
     https://github.com/paddyroddy/python-template\
     """, Documentation = """\
@@ -49,6 +48,7 @@ urls = {Code = """\
     """, Issues = """\
     https://github.com/paddyroddy/python-template/issues\
     """}
+license.file = "LICENCE.md"
 
 [tool.check-manifest]
 ignore = [
