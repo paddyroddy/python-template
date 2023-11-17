@@ -46,7 +46,7 @@ urls = {Code = """\
     https://paddyroddy.github.io/python-template\
     """, Homepage = """\
     https://github.com/paddyroddy/python-template\
-    """Issues = """\
+    """, Issues = """\
     https://github.com/paddyroddy/python-template/issues\
     """}
 
