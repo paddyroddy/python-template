@@ -66,8 +66,6 @@ paths.source = [
 ]
 
 [tool.mypy]
-ignore_missing_imports = true
-scripts_are_modules = true
 strict = true
 
 [tool.pytest.ini_options]
