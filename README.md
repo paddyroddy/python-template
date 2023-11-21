@@ -2,6 +2,7 @@
 
 [![PyPI](https://badge.fury.io/py/example.svg)](https://pypi.org/project/example)
 [![Python](https://img.shields.io/pypi/pyversions/example)](https://www.python.org)
+[![Licence](https://img.shields.io/github/license/paddyroddy/python-template)](https://github.com/paddyroddy/python-templateblob/main/LICENCE.txt)
 [![Documentation](https://img.shields.io/badge/Documentation-Example-blueviolet.svg)](https://paddyroddy.github.io/python-template)
 [![Test](https://github.com/paddyroddy/python-template/actions/workflows/test.yml/badge.svg)](https://github.com/paddyroddy/python-template/actions/workflows/test.yml)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
