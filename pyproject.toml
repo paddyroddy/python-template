@@ -53,6 +53,7 @@ license.file = "LICENCE.txt"
 
 [tool.check-manifest]
 ignore = [
+    "*.md",
     "src/example/_version.py",
 ]
 
