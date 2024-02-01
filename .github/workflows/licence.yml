@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # yamllint disable-line rule:line-length
-      - uses: paddyroddy/.github/actions/licence@b45ffef611d12e0263916cf6f650a9b2cc13aa4f # v0
+      - uses: paddyroddy/.github/actions/licence@6945dc7543c02201ffb88ace2286439798acbda8 # v0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           licence-file: ./LICENCE.txt
