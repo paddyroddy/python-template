@@ -85,6 +85,7 @@ testpaths = [
 fix = true
 force-exclude = true
 lint.ignore = [
+    "D203",
     "D212",
     "D407",
 ]
