@@ -4,7 +4,7 @@
 [![Python](https://img.shields.io/pypi/pyversions/example)](https://www.python.org)
 [![Licence](https://img.shields.io/github/license/paddyroddy/python-template)](https://github.com/paddyroddy/python-template/blob/main/LICENCE.txt)
 [![Documentation](https://img.shields.io/badge/Documentation-Example-blueviolet.svg)](https://paddyroddy.github.io/python-template)
-[![Test](https://github.com/paddyroddy/python-template/actions/workflows/test.yml/badge.svg)](https://github.com/paddyroddy/python-template/actions/workflows/test.yml)
+[![Test](https://github.com/paddyroddy/python-template/actions/workflows/test.yaml/badge.svg)](https://github.com/paddyroddy/python-template/actions/workflows/test.yaml)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 [![Renovate](https://img.shields.io/badge/renovate-enabled-orange?logo=renovatebot&logoColor=white.svg)](https://renovatebot.com)
 
