@@ -28,8 +28,7 @@ jobs:
       # yamllint disable-line rule:line-length
       - uses: paddyroddy/.github/actions/python/tox@bb1ef2b53f8ed8feef3238ab84ad31aaaa6e947d # v0
         with:
-          cache-path: |-
-            .tox
+          cache-path: .tox
           operating-system: ${{ matrix.os }}
           pyproject-toml: ./pyproject.toml
           python-version: ${{ matrix.python-version }}
