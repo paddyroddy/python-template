@@ -20,7 +20,7 @@ body:
       description: >-
         A minimal working example of code to reproduce the unexpected behaviour,
         this will render as `Python` code so no need for backticks.
-      value: |-
+      value: >-
         import example
 
         ...
@@ -48,7 +48,7 @@ body:
     type: input
     attributes:
       label: Version In Use
-      description: |-
+      description: >-
         Can be found by
         ```sh
         python -c "import example; print(example.__version__)"
@@ -59,7 +59,7 @@ body:
     type: textarea
     attributes:
       label: Additional Context
-      value: |-
+      value: >-
         - Python version:
         - Operating system:
       render: markdown
