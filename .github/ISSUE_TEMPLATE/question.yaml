@@ -1,7 +1,6 @@
 ---
 name: Question
 description: General Questions About Using Example
-title: "[QUESTION]: "
 labels:
   - question
 assignees: paddyroddy
