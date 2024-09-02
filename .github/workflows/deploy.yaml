@@ -17,7 +17,7 @@ jobs:
       id-token: write
     steps:
       # yamllint disable-line rule:line-length
-      - uses: paddyroddy/.github/actions/python/deployment@c5e8a3f7655f658e2af4e203482fd0996da6b9fe # v0
+      - uses: paddyroddy/.github/actions/python/deployment@df30b54c0cb391185a5931a393efb76d8d0f7789 # v0
         with:
           pyproject-toml: ./pyproject.toml
           python-version: "3.12"

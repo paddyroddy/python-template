@@ -31,7 +31,7 @@ jobs:
           - "3.12"
     steps:
       # yamllint disable-line rule:line-length
-      - uses: paddyroddy/.github/actions/python/tox@c5e8a3f7655f658e2af4e203482fd0996da6b9fe # v0
+      - uses: paddyroddy/.github/actions/python/tox@df30b54c0cb391185a5931a393efb76d8d0f7789 # v0
         with:
           cache-path: .tox
           operating-system: ${{ matrix.os }}

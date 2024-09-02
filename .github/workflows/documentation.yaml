@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # yamllint disable-line rule:line-length
-      - uses: paddyroddy/.github/actions/python/pdoc@c5e8a3f7655f658e2af4e203482fd0996da6b9fe # v0
+      - uses: paddyroddy/.github/actions/python/pdoc@df30b54c0cb391185a5931a393efb76d8d0f7789 # v0
         with:
           docs-dependency-section: .[docs]
           gh-pages-publish-directory: ./html/example
