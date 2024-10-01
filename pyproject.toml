@@ -140,6 +140,17 @@ overrides."tool.coverage.paths.source".inline_arrays = false
 overrides."tool.ruff.lint.isort.section-order".inline_arrays = false
 
 [tool.tox]
+env_list = [
+    "py310-linux",
+    "py310-macos",
+    "py310-windows",
+    "py311-linux",
+    "py311-macos",
+    "py311-windows",
+    "py312-linux",
+    "py312-macos",
+    "py312-windows",
+]
 legacy_tox_ini = """
     [gh-actions]
     python =
@@ -152,13 +163,9 @@ legacy_tox_ini = """
         ubuntu-latest: linux
         macos-latest: macos
         windows-latest: windows
-
-    [testenv]
-    commands =
-        pytest --cov --cov-report=lcov
-    deps =
-        pytest-cov
-
-    [tox]
-    env_list = py{310,311,312}-{linux,macos,windows}
 """
+env.testenv = {commands = [
+    "pytest --cov --cov-report=lcov",
+], deps = [
+    "pytest-cov",
+]}
