@@ -164,7 +164,7 @@ legacy_tox_ini = """
         macos-latest: macos
         windows-latest: windows
 """
-testenv = {commands = [
+env.testenv = {commands = [
     "pytest --cov --cov-report=lcov",
 ], deps = [
     "pytest-cov",
