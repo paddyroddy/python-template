@@ -151,19 +151,21 @@ env_list = [
     "py312-macos",
     "py312-windows",
 ]
-gh-actions.python = [
-    "3.10: py310",
-    "3.11: py311",
-    "3.12: py312",
-]
-gh-actions.env.OS = [
-    "macos-latest: macos",
-    "ubuntu-latest: linux",
-    "windows-latest: windows",
-]
-testenv.commands = [
+legacy_tox_ini = """
+    [gh-actions]
+    python =
+        3.10: py310
+        3.11: py311
+        3.12: py312
+
+    [gh-actions:env]
+    OS =
+        ubuntu-latest: linux
+        macos-latest: macos
+        windows-latest: windows
+"""
+env.testenv = {commands = [
     "pytest --cov --cov-report=lcov",
-]
-testenv.deps = [
+], deps = [
     "pytest-cov",
-]
+]}
