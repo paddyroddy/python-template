@@ -22,13 +22,16 @@ jobs:
       fail-fast: false
       matrix:
         os:
-          - macos-latest
           - ubuntu-latest
-          - windows-latest
         python-version:
           - "3.11"
           - "3.12"
           - "3.13"
+        include:
+          - os: macos-latest
+            python-version: "3.13"
+          - os: windows-latest
+            python-version: "3.13"
     steps:
       # yamllint disable-line rule:line-length
       - uses: paddyroddy/.github/actions/python/tox@7c376cafcf8e0ced0e2ac20e88102325d2a886d8 # v0
