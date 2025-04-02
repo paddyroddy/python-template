@@ -55,7 +55,7 @@ urls = {Code = """\
 [tool.check-manifest]
 ignore = [
     "*.md",
-    "src/example/_version.py",
+    "src/example_package/_version.py",
 ]
 
 [tool.coverage]
@@ -132,7 +132,7 @@ lint.pep8-naming.classmethod-decorators = [
 
 [tool.setuptools_scm]
 local_scheme = "no-local-version"
-write_to = "src/example/_version.py"
+write_to = "src/example_package/_version.py"
 
 [tool.tomlsort]
 overrides."project.classifiers".inline_arrays = false
