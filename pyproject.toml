@@ -26,6 +26,9 @@ dynamic = [
 ]
 keywords = []
 name = "example"
+license-files = [
+    "LICENCE.txt",
+]
 optional-dependencies = {dev = [
     "build",
     "mypy",
@@ -49,7 +52,6 @@ urls = {Code = """\
     """, Issues = """\
     https://github.com/paddyroddy/python-template/issues\
     """}
-license.file = "LICENCE.txt"
 
 [tool.check-manifest]
 ignore = [
