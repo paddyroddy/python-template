@@ -27,7 +27,7 @@ keywords = []
 license-files = [
     "LICENCE.txt",
 ]
-name = "example"
+name = "example-package"
 optional-dependencies = {dev = [
     "build",
     "mypy",
@@ -55,13 +55,13 @@ urls = {Code = """\
 [tool.check-manifest]
 ignore = [
     "*.md",
-    "src/example/_version.py",
+    "src/example_package/_version.py",
 ]
 
 [tool.coverage]
 report = {skip_covered = true, sort = "cover"}
 run = {branch = true, parallel = true, source = [
-    "example",
+    "example-package",
 ]}
 paths.source = [
     "src",
@@ -110,7 +110,7 @@ lint.ignore = [
     "ISC001",
 ]
 lint.isort = {known-first-party = [
-    "example",
+    "example_package",
 ], section-order = [
     "future",
     "standard-library",
@@ -132,7 +132,7 @@ lint.pep8-naming.classmethod-decorators = [
 
 [tool.setuptools_scm]
 local_scheme = "no-local-version"
-write_to = "src/example/_version.py"
+write_to = "src/example_package/_version.py"
 
 [tool.tomlsort]
 overrides."project.classifiers".inline_arrays = false

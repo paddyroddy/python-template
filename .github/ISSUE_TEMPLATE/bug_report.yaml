@@ -20,7 +20,7 @@ body:
         A minimal working example of code to reproduce the unexpected behaviour,
         this will render as `Python` code so no need for backticks.
       value: >-
-        import example
+        import example_package
 
         ...
       render: python
@@ -44,7 +44,7 @@ body:
       description: |-
         Can be found by
         ```sh
-        python -c "import example; print(example.__version__)"
+        python -c "import example_package; print(example_package.__version__)"
         ```
     validations:
       required: true
