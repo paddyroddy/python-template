@@ -25,10 +25,10 @@ dynamic = [
     "version",
 ]
 keywords = []
-name = "example"
 license-files = [
     "LICENCE.txt",
 ]
+name = "example"
 optional-dependencies = {dev = [
     "build",
     "mypy",
