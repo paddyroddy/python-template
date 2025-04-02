@@ -7,7 +7,7 @@ from ._version import __version__  # noqa: F401
 _logger = logging.getLogger(__name__)
 
 _formatter = logging.Formatter(
-    "%(levelname)s [%(asctime)s] example: %(message)s",
+    "%(levelname)s [%(asctime)s] example-package: %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S",
 )
 _console_handler = logging.StreamHandler()

@@ -27,7 +27,7 @@ keywords = []
 license-files = [
     "LICENCE.txt",
 ]
-name = "example"
+name = "example-package"
 optional-dependencies = {dev = [
     "build",
     "mypy",
@@ -61,7 +61,7 @@ ignore = [
 [tool.coverage]
 report = {skip_covered = true, sort = "cover"}
 run = {branch = true, parallel = true, source = [
-    "example",
+    "example-package",
 ]}
 paths.source = [
     "src",
@@ -110,7 +110,7 @@ lint.ignore = [
     "ISC001",
 ]
 lint.isort = {known-first-party = [
-    "example",
+    "example_package",
 ], section-order = [
     "future",
     "standard-library",
