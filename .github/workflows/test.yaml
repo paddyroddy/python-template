@@ -34,7 +34,7 @@ jobs:
             python-version: "3.13"
     steps:
       # yamllint disable-line rule:line-length
-      - uses: paddyroddy/.github/actions/python/tox@7193f2d6fda65de74a0d750fd19f53314f899200 # v0
+      - uses: paddyroddy/.github/actions/python/tox@51b992959f67661c3433840aec883cc9ddbe2945 # v0
         with:
           cache-path: .tox
           pyproject-toml: ./pyproject.toml
