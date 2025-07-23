@@ -13,9 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # yamllint disable-line rule:line-length
-      - uses: paddyroddy/.github/actions/python/pdoc@7193f2d6fda65de74a0d750fd19f53314f899200 # v0
+      - uses: paddyroddy/.github/actions/python/pdoc@9822515992aee280c44e631a99730f6e3cc3eba8 # v0
         with:
-          docs-dependency-section: .[docs]
+          docs-dependency-section: docs
           gh-pages-publish-directory: ./html/example_package
           github-token: ${{ secrets.GITHUB_TOKEN }}
           project-directory: ./src/example_package
