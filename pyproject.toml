@@ -46,15 +46,10 @@ license-files = [
 name = "example-package"
 readme = "README.md"
 requires-python = ">=3.11"
-urls = {Code = """\
-    https://github.com/paddyroddy/python-template\
-    """, Documentation = """\
-    https://paddyroddy.github.io/python-template\
-    """, Homepage = """\
-    https://github.com/paddyroddy/python-template\
-    """, Issues = """\
-    https://github.com/paddyroddy/python-template/issues\
-    """}
+urls.Code = "https://github.com/paddyroddy/python-template"
+urls.Documentation = "https://paddyroddy.github.io/python-template"
+urls.Homepage = "https://github.com/paddyroddy/python-template"
+urls.Issues = "https://github.com/paddyroddy/python-template/issues"
 
 [tool.check-manifest]
 ignore = [
