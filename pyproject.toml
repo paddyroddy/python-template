@@ -31,6 +31,7 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Typing :: Typed",
 ]
 dependencies = []
@@ -144,6 +145,7 @@ env_list = [
     "py311",
     "py312",
     "py313",
+    "py314",
 ]
 env_run_base = {commands = [
     [
@@ -160,4 +162,6 @@ gh.python = {"3.11" = [
     "py312",
 ], "3.13" = [
     "py313",
+], "3.14" = [
+    "py314",
 ]}
