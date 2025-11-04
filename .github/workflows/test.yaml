@@ -27,11 +27,12 @@ jobs:
           - "3.11"
           - "3.12"
           - "3.13"
+          - "3.14"
         include:
           - os: macos-latest
-            python-version: "3.13"
+            python-version: "3.14"
           - os: windows-latest
-            python-version: "3.13"
+            python-version: "3.14"
     steps:
       # yamllint disable-line rule:line-length
       - uses: paddyroddy/.github/actions/python/tox@7193f2d6fda65de74a0d750fd19f53314f899200 # v0
