@@ -21,7 +21,7 @@ To install the latest development version of `Example`, clone this repository
 and run
 
 ```sh
-pip install -e .
+uv sync
 ```
 
 ### Supported Platforms
