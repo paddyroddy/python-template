@@ -10,7 +10,7 @@ on:
 
 jobs:
   documentation:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     steps:
       # yamllint disable-line rule:line-length
       - uses: paddyroddy/.github/actions/python/pdoc@9822515992aee280c44e631a99730f6e3cc3eba8 # v0
