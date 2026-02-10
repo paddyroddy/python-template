@@ -5,7 +5,7 @@ on:
   issues:
     types:
       - opened
-  pull_request:
+  pull_request_target:
     types:
       - opened
 
@@ -14,6 +14,6 @@ jobs:
     runs-on: ubuntu-slim
     steps:
       # yamllint disable-line rule:line-length
-      - uses: paddyroddy/.github/actions/add-to-project@7193f2d6fda65de74a0d750fd19f53314f899200 # v0
+      - uses: paddyroddy/.github/actions/add-to-project@fc1f4d5abb1562679c33f38faf171f5cfc81c969 # v0
         with:
           project-token: ${{ secrets.PROJECT_PAT }}
