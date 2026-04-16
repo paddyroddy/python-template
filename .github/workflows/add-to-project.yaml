@@ -12,7 +12,7 @@ on:
 jobs:
   add-issue-to-project:
     permissions: {}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     steps:
       # yamllint disable-line rule:line-length
       - uses: paddyroddy/.github/actions/add-to-project@51b992959f67661c3433840aec883cc9ddbe2945 # v0
