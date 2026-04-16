@@ -17,6 +17,8 @@ concurrency:
 jobs:
   test:
     name: ${{ matrix.os }} py${{ matrix.python-version }}
+    permissions:
+      contents: read
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
