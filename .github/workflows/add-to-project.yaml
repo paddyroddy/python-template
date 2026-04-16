@@ -11,6 +11,7 @@ on:
 
 jobs:
   add-issue-to-project:
+    permissions: {}
     runs-on: ubuntu-latest
     steps:
       # yamllint disable-line rule:line-length
