@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-slim
     steps:
       # yamllint disable-line rule:line-length
-      - uses: paddyroddy/.github/actions/python/pdoc@9822515992aee280c44e631a99730f6e3cc3eba8 # v0
+      - uses: paddyroddy/.github/actions/python/pdoc@7a1cfa6fb4fcc2151803cb6f2cbbe6474dc7f860 # v0
         with:
           docs-dependency-section: docs
           gh-pages-publish-directory: ./html/example_package
