@@ -11,11 +11,11 @@ on:
 jobs:
   documentation:
     permissions:
-      contents: read
+      contents: write
     runs-on: ubuntu-slim
     steps:
       # yamllint disable-line rule:line-length
-      - uses: paddyroddy/.github/actions/python/pdoc@7a1cfa6fb4fcc2151803cb6f2cbbe6474dc7f860 # v0
+      - uses: paddyroddy/.github/actions/python/pdoc@af6eac3f165558bd83ebec41e0abfbe09a75817e # v0
         with:
           docs-dependency-section: docs
           gh-pages-publish-directory: ./html/example_package
