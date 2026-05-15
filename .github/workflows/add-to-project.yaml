@@ -5,17 +5,19 @@ on:
   issues:
     types:
       - opened
-  pull_request:
+  pull_request_target: # zizmor: ignore[dangerous-triggers]
     types:
       - opened
 
 jobs:
   add-issue-to-project:
-    permissions: {}
+    permissions:
+      issues: read
+      pull-requests: read
     runs-on: ubuntu-slim
     steps:
       # yamllint disable-line rule:line-length
-      - uses: paddyroddy/.github/actions/add-to-project@fc1f4d5abb1562679c33f38faf171f5cfc81c969 # v0
+      - uses: paddyroddy/.github/actions/add-to-project@dca9a13d483fe335f0b9edbd08494e6e4cd3b498 # v0
         with:
           # yamllint disable-line rule:line-length
           project-token: ${{ secrets.PROJECT_PAT }} # zizmor: ignore[secrets-outside-env]
